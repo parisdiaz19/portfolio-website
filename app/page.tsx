@@ -16,8 +16,8 @@ import Contact from "@/Components/contact";
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
-      <Header LinkName="Resume" />
-      <Intro ProfilePicture={Headshot} />
+      <Header />
+      <Intro>test</Intro>
       <SectionDivider />
       <About />
       <Projects />
