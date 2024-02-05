@@ -25,6 +25,10 @@ export const links = [
     name: "Skills",
     hash: "#skills",
   },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
 ] as const;
 
 export const experiences = [
@@ -89,10 +93,10 @@ export const projectsData = [
 export const experiencesData = [
   {
     company: "Scorpion Internet Marketing",
-    title: "Front-End Developer",
+    title: "Software Engineer",
     location: "Valencia, CA (Remote)",
     description:
-      "I currently work as a front-end developer. My responsibilities include: Maintaining/Updating client websites, communicate with Designers and Creative Managers on matters of website concept, design, and structure.",
+      "I currently work as a Software Engineer. My responsibilities include: Maintaining/Updating client websites, communicate with Designers and Creative Managers on matters of website concept, design, and structure.",
     responsibilities: [
       "Continuously maintain the website(s); test, troubleshoot, and resolve problems",
       "Communicate with Designers and Creative Managers on matters of website concept, design, and structure",

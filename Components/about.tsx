@@ -11,11 +11,10 @@ export default function About() {
   const { ref } = useSectionInView("About", 0.5);
   const { setActiveSection, timeOfLastClick } = useActiveSectionContext();
 
-
   return (
     <motion.section
       ref={ref}
-      className="mx-auto mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      className="mx-auto mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 border-black/5  dark:bg-none rounded-md p-5"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}

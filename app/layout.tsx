@@ -1,9 +1,11 @@
-
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Header from "@/Components/Header";
 import Footer from "@/Components/footer";
+import ThemeSwitch from "@/Components/theme-switch";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Toaster } from "react-hot-toast";
+import ThemeContextProvider from "@/context/theme-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,22 +23,28 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body
         className={`${inter.className} bg-gray-50 
-         text-gray-950 relative h-[5000px] pt-28 sm:pt-38`}
+         text-gray-950 relative pt-28 sm:pt-38
+          dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >
         <div
           className="bg-[#7374bb] absolute top-[-6rem] -z-10 right-[11rem] 
-        h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem]"
+        h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#501047]"
         ></div>
         <div
           className="bg-[#dbd7fb] absolute top-[-1rem] -z-10 left-[-35rem] 
         h-[31.25rem] w-[50rem] rounded-full blur-[10rem] sm:w-[68.75rem] md:left-[-33rem]
-        lg:left-[-28rem] xl:left-[-5rem] 2xl:left-[-5rem]"
+        lg:left-[-28rem] xl:left-[-5rem] 2xl:left-[-5rem] dakr:bg-[#676394]"
         ></div>
-        <ActiveSectionContextProvider>
-          <Header />
-          {children}
-        </ActiveSectionContextProvider>
-        <Footer />
+
+        <ThemeContextProvider>
+          <ActiveSectionContextProvider>
+            <Header />
+            {children}
+            <Footer />
+            <ThemeSwitch />
+          </ActiveSectionContextProvider>
+        </ThemeContextProvider>
+        <Toaster position="top-right" />
       </body>
     </html>
   );

@@ -11,6 +11,7 @@ import SectionDivider from "@/Components/section-divider";
 import About from "@/Components/about";
 import Skills from "@/Components/skills";
 import Experience from "@/Components/experience";
+import Contact from "@/Components/contact";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Projects />
       <Experience />
       <Skills />
+      <Contact />
     </main>
   );
 }

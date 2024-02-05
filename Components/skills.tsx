@@ -29,7 +29,7 @@ export default function Skills() {
         {skillsData.map((skill, index) => (
           <motion.li
             className="bg-white border border-black/[0.1] 
-            rounded-xl px-5 py-3"
+            rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -49,7 +49,7 @@ export default function Skills() {
           {specialSkillsData.map((skill, index) => (
             <motion.li
               className="bg-white border border-black/[0.1] 
-            rounded-xl px-5 py-3"
+            rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white"
               key={index}
               variants={fadeInAnimationVariants}
               initial="initial"

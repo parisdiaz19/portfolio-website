@@ -12,7 +12,7 @@ export default function Mainstage({ ProfilePicture }) {
   const { ref } = useSectionInView("Home", 0.5);
   return (
     <section ref={ref} id="home" className="my-[5.5rem] scroll-mt-[100rem]">
-      <div className="flex items-center justify-center mx-auto">
+      <div className="flex items-center justify-center mx-auto mb-[3rem]">
         <div>
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -25,11 +25,11 @@ export default function Mainstage({ ProfilePicture }) {
             <Image
               src={ProfilePicture}
               alt="Paris Diaz Headshot"
-              width="192"
-              height="192"
+              width="200"
+              height="200"
               quality="95"
               priority={true}
-              className="h-28 w-28 rounded-full 
+              className="h-[12rem] w-[12rem] rounded-full 
             border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
@@ -42,7 +42,7 @@ export default function Mainstage({ ProfilePicture }) {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Paris! </span>
-        I'm a <span className="font-bold">front-end developer</span>. I enjoy
+        I'm a <span className="font-bold">Software Engineer</span>. I enjoy
         building
         <span className="italic"> sites & apps</span>.
       </motion.p>
@@ -68,7 +68,7 @@ export default function Mainstage({ ProfilePicture }) {
           download
           className="group bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full
           outline-none focus:scale-110 hover:scale-110 active:scale-105
-          transition cursor-pointer border border-black/10"
+          transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
@@ -78,14 +78,14 @@ export default function Mainstage({ ProfilePicture }) {
           target="_blank"
           className="group bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full
         outline-none focus:scale-110 hover:scale-110 active:scale-105
-        transition cursor-pointer border border-black/10"
+        transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin className="opacity-70" />
         </a>
         <a
           className="group bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full
         outline-none focus:scale-110 hover:scale-110 active:scale-105
-        transition cursor-pointer border border-black/10"
+        transition cursor-pointer border border-black/10 dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare className="opacity-70" />
         </a>
