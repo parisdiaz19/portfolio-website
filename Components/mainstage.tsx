@@ -2,13 +2,18 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import ProfilePicture from "@/public/headshot.jpg";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import React from "react";
 import { useSectionInView } from "@/context/hooks";
 
-export default function Mainstage({ ProfilePicture }) {
+interface MainstageComponentProps {
+  children: string; // Add this line to specify the type
+}
+
+export default function Mainstage({ children }: MainstageComponentProps) {
   const { ref } = useSectionInView("Home", 0.5);
   return (
     <section ref={ref} id="home" className="my-[5.5rem] scroll-mt-[100rem]">
