@@ -24,7 +24,7 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills", 0.5);
   return (
     <section ref={ref} id="skills" className="mx-auto mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
-      <HeaderComponent HeaderText="My Skills" />
+      <HeaderComponent>My Skills</HeaderComponent>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
@@ -44,7 +44,7 @@ export default function Skills() {
         ))}
       </ul>
       <div className="my-10">
-        <HeaderComponent HeaderText="My Special Skills" />
+        <HeaderComponent>My Special Skills</HeaderComponent>
         <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
           {specialSkillsData.map((skill, index) => (
             <motion.li

@@ -21,7 +21,7 @@ export default function Experience() {
       className="my-10 scroll-mt-28 mb-28 sm:mb-40"
       id="experience"
     >
-      <HeaderComponent HeaderText="My Experience" />
+      <HeaderComponent>My Experience</HeaderComponent>
       <VerticalTimeline lineColor="">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>

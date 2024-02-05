@@ -20,7 +20,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <HeaderComponent HeaderText="About Me" />
+      <HeaderComponent>About Me</HeaderComponent>
       <p className="mb-3">
         After graduating with a degree in{" "}
         <span className="font-medium">Music Education</span>, I decided to
