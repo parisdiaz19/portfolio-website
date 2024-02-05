@@ -33,7 +33,7 @@ export default function Contact() {
       }}
       className="mb-20 sm:mb-28 w-[min(100%,38rem)]"
     >
-      <HeaderComponent HeaderText="Contact me"></HeaderComponent>
+      <HeaderComponent>Contact Me</HeaderComponent>
       <p className="text-gray-700 my-[-1.5rem] mb-5 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:parisdiaz719@gmail.com">
