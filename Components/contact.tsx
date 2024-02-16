@@ -1,24 +1,42 @@
-"use client";
-
-import React from "react";
+import React, { useState, ChangeEvent, FormEvent } from "react";
 import HeaderComponent from "./header-component";
-import { FaPaperPlane } from "react-icons/fa";
+
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/context/hooks";
-import { useState } from "react";
-import { sendEmail } from "@/actions/sendEmail";
-import { useFormStatus } from "react-dom";
+
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { sendEmail } from "@/actions/sendEmail";
 
-export default function Contact() {
-  const { ref } = useSectionInView("Contact");
-  const { pending } = useFormStatus();
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
+
+const Contact: React.FC = () => {
+
+  const [formData, setFormData] = useState<FormData>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+  };
 
   return (
     <motion.section
       id="contact"
-      ref={ref}
       initial={{
         opacity: 0,
       }}
@@ -45,47 +63,48 @@ export default function Contact() {
       <form
         className="mt-10 flex flex-col dark:text-black"
         action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          alert("Email has been sent successfully!");
+          await sendEmail(formData);
         }}
       >
         <input
           placeholder="Your Name"
-          name="senderName"
+          name="name"
           className="h-14 rounded-lg border-black p-4 my-3
            dark:bg-white dark:bg-opacity/80 dark:focus:bg-opacity-100 transition-all
            dark:outline-none"
           type="text"
           required
           maxLength={70}
+          value={formData.name}
+          onChange={handleChange}
         />
         <input
           placeholder="Your Email Address"
-          name="senderEmail"
+          name="email"
           className="h-14 rounded-lg border-black p-4
           dark:bg-white dark:bg-opacity/80 dark:focus:bg-opacity-100 transition-all
           dark:outline-none"
           type="email"
           required
           maxLength={200}
+          value={formData.email}
+          onChange={handleChange}
         />
         <textarea
           placeholder="Your Message"
           className="h-52 mb-4 my-3 py-4 rounded-lg borderBlack p-4
           dark:bg-white dark:bg-opacity/80 dark:focus:bg-opacity-100 transition-all
           dark:outline-none"
-          name="senderMessage"
+          name="message"
           required
           maxLength={500}
+          value={formData.message}
+          onChange={handleChange}
         />
         <SubmitBtn />
       </form>
     </motion.section>
   );
-}
+};
+
+export default Contact;
