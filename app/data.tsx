@@ -1,5 +1,6 @@
 import phaseImg from "@/public/phase.png";
 import breakoutImg from "@/public/breakout.png";
+import tekken from "@/public/tekken.png";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import { CgWorkAlt } from "react-icons/cg";
@@ -77,12 +78,12 @@ export const projectsData = [
     link: "https://parisdiaz19.github.io/paddleGame/",
   },
   {
-    title: "OSRS Grand Exchange Price Tracker",
+    title: "Tekken 8 Resource Library",
     description:
-      "This project grabs directly from the OSRS API to grab real-time prices of items from the Grand Exchange. The user can save their selections to a list.",
+      "This is a project I made for my friends and I. We are huge fans of the Tekken franchise and I built this website to hold all data related to characters and how to use them.",
     tags: ["React", "Next.js", "TailwindCSS", "Router", "Redux"],
-    imageUrl: breakoutImg,
-    link: "",
+    imageUrl: tekken,
+    link: "https://tekken8-resource-library.vercel.app",
   },
 ] as const;
 
