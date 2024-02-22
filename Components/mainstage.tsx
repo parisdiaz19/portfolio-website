@@ -50,9 +50,7 @@ export default function Mainstage({ children }: MainstageComponentProps) {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Paris! </span>
-        I'm a <span className="font-bold">Software Engineer</span>. I enjoy
-        building
-        <span className="italic"> sites & apps</span>.
+        I'm a <span className="font-bold">Software Engineer</span> and <span className="font-bold">Violinist</span>.
       </motion.p>
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
