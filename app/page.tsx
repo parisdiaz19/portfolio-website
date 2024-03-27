@@ -20,7 +20,6 @@ export default function Home() {
       <Intro>test</Intro>
       <SectionDivider />
       <About />
-      <Projects />
       <Experience />
       <Skills />
     </main>
