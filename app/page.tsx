@@ -21,6 +21,7 @@ export default function Home() {
       <SectionDivider />
       <About />
       <Experience />
+      <Projects />
       <Skills />
     </main>
   );

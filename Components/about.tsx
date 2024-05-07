@@ -22,18 +22,18 @@ export default function About() {
     >
       <HeaderComponent>About Me</HeaderComponent>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Music Education</span>, I decided to
-        pursue my passion for programming. During the COVID-19 lockdown, I
-        taught myself <span className="font-medium">Web Development</span> using
-        resources from YouTube and Discord Communities. I love how programming
-        allows you to apply your problem solving skills in real-time. This field
-        of work allows me to always be on my toes and helps with my day-to-day
-        life when I have to make quick decisions. My core stack is{" "}
-        <span className="font-medium">React</span>,{" "}
-        <span className="font-medium">Next.js</span>,{" "}
-        <span className="font-medium">Node.js</span>, and{" "}
-        <span className="font-medium">MongoDB</span>.
+        As a dedicated Frontend Developer at{" "}
+        <span className="font-medium">Scorpion</span>, I specialize in{" "}
+        <span className="font-medium"> React.js</span>,
+        <span className="font-medium"> Next.js</span>,
+        <span className="font-medium"> TypeScript</span>, and
+        <span className="font-medium"> SQL</span>, crafting and enhancing
+        websites to deliver outstanding user experiences. Working alongside a
+        skilled team of engineers, designers, and marketers, I've played a
+        pivotal role in driving success for clients within the Franchise and
+        Healthcare sectors. I'm passionate about collaboration, continually
+        expanding my knowledge of emerging technologies, and tackling intricate
+        challenges to achieve our collective objectives.
       </p>
       <p className="mb-3">
         When I'm not coding, I enjoy playing my violin, building plastic model

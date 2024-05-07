@@ -33,7 +33,7 @@ export default function Project({
     >
       <section
         className="group bg-gray-100 max-w-[42rem] border border-black/5 
-      overflow-hidden sm:pr-8 relative sm:h-[22rem] mb-3  hover:bg-gray-200 transition
+      overflow-hidden sm:pr-8 relative lg:h-auto sm:h-auto mb-3  hover:bg-gray-200 transition
       dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
       >
         <a className="cursor-pointer" href={link} target="_blank">

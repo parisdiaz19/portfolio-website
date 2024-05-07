@@ -1,6 +1,7 @@
 import phaseImg from "@/public/phase.png";
 import breakoutImg from "@/public/breakout.png";
 import tekken from "@/public/tekken.png";
+import carbonApp from "@/public/carbon-app.png";
 import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import { CgWorkAlt } from "react-icons/cg";
@@ -17,6 +18,10 @@ export const links = [
   {
     name: "Experience",
     hash: "#experience",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Skills",
@@ -66,77 +71,59 @@ export const projectsData = [
     link: "https://parisdiaz19.github.io/phase-music-player/",
   },
   {
-    title: "Breakout Game",
+    title: "Carbon App",
     description:
-      "Breakout paddle game created in the browser. Features the use of animations and HTML Canvas.",
-    tags: ["HTML", "CSS", "CSS Animation", "JavaScript", "HTML Canvas"],
-    imageUrl: breakoutImg,
-    link: "https://parisdiaz19.github.io/paddleGame/",
-  },
-  {
-    title: "Tekken 8 Resource Library",
-    description:
-      "This is a project I made for my friends and I. We are huge fans of the Tekken franchise and I built this website to hold all data related to characters and how to use them.",
-    tags: ["React", "Next.js", "TailwindCSS", "Router", "Redux"],
-    imageUrl: tekken,
-    link: "https://tekken8-resource-library.vercel.app",
+      "This is an application created using Next.js and hosted on Vercel. It displays information from the Official Carbon Intensity API for Great Britain. Some features incluse a live chart displaying overall Carbon Intensity per region, user sorting/filtering, and a dynamic side panel that fetches live Carbon Intensity data.",
+    tags: ["Next.js", "TypeScript", "TailwindCSS", "React Graph"],
+    imageUrl: carbonApp,
+    link: "https://carbon-app-topaz.vercel.app",
   },
 ] as const;
 
 export const experiencesData = [
   {
     company: "Scorpion Internet Marketing",
-    title: "Software Engineer",
+    title: "Frontend Engineer",
     location: "Valencia, CA (Remote)",
-    description:
-      "I currently work as a Software Engineer. My responsibilities include: Maintaining/Updating client websites, communicate with Designers and Creative Managers on matters of website concept, design, and structure.",
+    date: "January 2021 - Present",
     responsibilities: [
-      "Continuously maintain the website(s); test, troubleshoot, and resolve problems",
-      "Communicate with Designers and Creative Managers on matters of website concept, design, and structure",
-      "Responsible for ensuring all requests are being addressed with importance, urgency and professional communication",
-      "Communicate with Director of Technical Quality or System Engineers for system level improvements to enhance the client experience and team efficiency ",
-      "Responsible for providing assistance to web developers by being a resource for questions, coaching and assisting with training",
+      "Spearhead the development of responsive, functional, and visually appealing websites using modern technologies such as React.js and Next.js.",
+      "Lead initiatives to optimize website performance, implementing lazy loading, jQuery removal, JavaScript minification, and stylesheet optimization.",
+      "Achieved a notable 45 percent reduction in page load times, reflected in improved Google PageSpeed scores.",
+      "Implement enhancements for our proprietary CMS and client websites, introducing modern frontend technologies, refining user interfaces, and optimizing workflows.",
+      "Ensure seamless user experiences across multiple browsers (Chrome, Firefox, Safari, Edge) by meticulously testing and integrating cross-browser compatibility solutions.",
+      "Responsible for ensuring all requests and edits are being addressed with focus, importance, urgency and professional communication.",
+      "Take an active role in mentoring new developers, providing comprehensive guidance on our frontend technologies and best practices.",
+      "Lead close collaboration with the Integrations team to guarantee the seamless integration of frontend components with various backend services.",
+      "Communicate with Designers and Marketing Managers on matters of website concept, design, and structure to ensure the best results and performance for our clients.",
     ],
     icon: React.createElement(CgWorkAlt),
-    date: "January 2021 - Present",
   },
   {
     company: "Purpose White",
-    title: "Shopify Developer",
+    title: "Frontend Developer",
     location: "Fort Lee, NJ (Remote)",
-    description: "Built and maintained e-commerce website for shopify.",
     responsibilities: [
-      "Designed company website using HTML, CSS, JavaScript and Shopify Liquid",
-      "Discussed product and prototypes with CEO, CFO, and CMO",
+      "Implemented efficient front-end development using React.js and Responsive Web Design, leading to a 25 percent enhancement in overall website performance and responsiveness.",
+      "Integrated and optimized e-commerce functionalities, such as product pages, shopping carts, and checkout processes, to streamline the buying experience.",
+      "Implemented mobile-first responsive design principles to guarantee a consistent and visually appealing experience across different devices and screen sizes.",
+      "Engaged in regular discussions with the CEO to understand product details, aligning the front-end development strategy with business goals to enhance customer engagement and drive sales.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "January 2020 - December 2020",
   },
   {
     company: "Swish Gadgets",
-    title: "Front-End Developer",
+    title: "Web Developer",
     location: "Fort Lee, NJ (Remote)",
-    description: "Built and maintained e-commerce website for shopify.",
     responsibilities: [
-      "Designed company website using HTML, CSS, JavaScript and Shopify Liquid",
-      "Discussed product and prototypes with CEO, CFO, and CMO",
+      "Spearheaded the migration of the company website to Shopify, resulting in a remarkable over 50 percent increase in sales and providing an enhanced user experience. Developed and optimized frontend components to align with Shopify’s platform, contributing to the overall success of the migration project.",
+      "Implemented and customized Shopify themes to create a visually appealing and cohesive online store for Swish Gadgets.",
+      "Integrated and optimized e-commerce features on the Shopify platform, including secure checkout processes, payment gateways, and inventory management, ensuring a seamless online shopping experience.",
+      "Implemented SEO best practices to optimize product pages and improve the website’s visibility on search engines, driving organic traffic and enhancing discoverability.",
+      "Collaborated with the marketing team to align web development strategies with promotional campaigns, maximizing the impact of marketing efforts on the online store.",
     ],
     icon: React.createElement(CgWorkAlt),
     date: "January 2019 - December 2020",
-  },
-
-  {
-    company: "Montclair State University",
-    title: "Graduated w/ Bachelor of Arts - BA, Music Teacher Education",
-    location: "Montclair, NJ",
-    description:
-      "I graduated from Montclair with a degree in Music Education with a focus in Violin Studies. I have a licesnse to teach in public schools for the state of New Jersey.",
-    responsibilities: [
-      "Dean's List (3.8 GPA)",
-      "Performed at various venues including Carnegie Hall (NYC)",
-      "Was a member of the MSU Symphony Orchestra (2014-2019)",
-    ],
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
   },
 ] as const;

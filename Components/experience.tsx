@@ -54,7 +54,6 @@ export default function Experience() {
               <h3 className="font-semibold capitalize mb-2">{item.company}</h3>
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white">{item.description}</p>
               <ul className="mt-3">
                 {item.responsibilities.map((responsibility, index) => (
                   <li className="!mt-1 font-normal list-disc" key={index}>
